@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang=""es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Le dice al navegador que codificacion usar, asi las tildes y ñ no se rompen -->
+
+    <title>Lista de Tareas</title>
+    <!-- Esto es lo que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Conecta HTML con el CSS -->
+</head>
+<body>
+
+    <h1>Mi lista de Tareas</h1>
+
+    <!-- Formulario para agregar una tarea nueva -->
+     <div class="formulario">
+        <input type="text" id="input-tarea" placeholder="Escribe una nueva tarea...">
+        <button id="btn-agregar">Agregar</button>
+     </div>
+
+     <!-- Aca van a aparecer las tareas que agreguemos -->
+     <ul id="lista-tareas">
+        <!-- Ahora esta vacia, JS la va a llenar de dinamica -->
+     </ul>
+
+     <script src="script.js" defer></script>
+     <!-- Esta linea conecta con el JS. El "defer" hace que se cargue despues del HTML-->
+</body>
+</html>

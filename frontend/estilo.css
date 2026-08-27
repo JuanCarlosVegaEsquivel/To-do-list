@@ -1,0 +1,71 @@
+/* Esto afecta a TODA la pagina */
+body {
+  font-family: Arial, sans-serif; /* tipo de letra */
+  background-color: #f4f4f4; /* gris clarito de fondo*/
+  display: flex;
+  flex-direction: column; /* acomoda el contenido en columna */
+  align-items: center; /* centra todo horizontalmente*/
+  margin-top: 50px; /* separacion desde arriba */
+}
+
+/*El tituilo*/
+h1 {
+  color: #333;
+}
+
+/* El contenedor del input + boton */
+.formulario {
+  display: flex; /* pone el input y el boton en la misma fila*/
+  gap: 10px; /* espacio entre ellos */
+  margin-bottom: 20px;
+}
+
+/* El input de texto */
+#input-tarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+/* El boton de agregar */
+#btn-agregar {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50; /*Verde*/
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* el mouse se pone "manito" al pasar por encima*/
+}
+
+#btn-agregar:hover {
+  background-color: #45a049; /*Verde un poco mas oscuro al pasar el mouse*/
+}
+
+/* la lista de tareas */
+#lista-tareas {
+  list-style: none; /* quita los puntitos por defecto de la lista */
+  padding: 0;
+  width: 300px;
+}
+
+#lista-tareas li {
+  display: flex;
+  justify-content: space-between; /* texto a la izquierda, botón a la derecha */
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.btn-borrar {
+  background-color: #e74c3c; /* rojo */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
